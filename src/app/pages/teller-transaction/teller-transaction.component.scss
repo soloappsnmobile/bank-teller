@@ -1,0 +1,54 @@
+@import "src/styles.scss";
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: 80vh;
+  overflow-y: scroll;
+  .buttons {
+    margin-left: 80%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .button {
+      background-color: $primary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100px;
+      border-radius: 0.5rem;
+      color: white;
+      font-size: $text-sm ;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

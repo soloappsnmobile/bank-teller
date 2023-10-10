@@ -315,8 +315,15 @@
       "amount": 150,
       "date": "2023-10-10T17:34:53.653Z",
       "5Id": "transactions"
+    },
+    {
+      "id": 361,
+      "accountId": 1,
+      "type": "Withdrawal",
+      "amount": 100,
+      "date": "2023-10-10T18:13:10.082Z",
+      "1Id": "transactions"
     }
-
   ],
   "routes": {
     "/transactions/:uid/info": "transactions"

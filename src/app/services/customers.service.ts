@@ -29,6 +29,9 @@ export class CustomersService {
   getCustomerTransactions(id: number) {
     return this._http.get(`${this.API_URL}/${id}/transactions/info`);
   }
+  getAllTransactions() {
+    return this._http.get(`${this.API_URL}/info`);
+  }
 
   deposit(paload: InfoI, uid: number) {
     const transactionUrl = `${this.API_URL}/${uid}/transactions/info`;

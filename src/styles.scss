@@ -18,8 +18,35 @@ $tertiary-color: #00c2ff;
 $text-dark: #969696;
 $white-color: #fff;
 
+
 $text-sm: 0.8rem;
 $text-md: 1rem;
 $text-lg: 1.2rem;
 $text-xl: 1.5rem;
 $text-xxl: 2rem;
+
+
+
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+// When the isnt't scrolling, hide the scrollbar
+::-webkit-scrollbar-thumb:active {
+  background: #b3b3b3;
+}

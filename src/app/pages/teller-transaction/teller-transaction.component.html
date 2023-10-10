@@ -1,1 +1,32 @@
-<p>teller-transaction works!</p>
+<div class="table" *ngIf="!isGettingTransactions">
+  <div class="buttons">
+    <div class="button" (click)="exportCSV()">
+    <p>Excel</p>
+  </div>
+  <div class="button" (click)="generatePDF()">
+    <p> PDF</p>
+  </div>
+  </div>
+  <table #reportContent>
+    <thead>
+      <tr>
+        <th>Trans. ID</th>
+        <th>Trans. Type</th>
+        <th>Amount</th>
+        <th>Trans. Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.id }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>GHS {{ transaction.amount }}</td>
+        <td>{{ transaction.date | date : "yyyy-MM-dd HH:mm:ss" }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="loading" *ngIf="isGettingTransactions">
+  <app-loader></app-loader>
+</div>

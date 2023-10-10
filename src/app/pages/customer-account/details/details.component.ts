@@ -146,7 +146,6 @@ export class DetailsComponent implements OnInit {
     }
     this._customerService.withdraw(payload, this.accountId).subscribe({
       next: (response: any) => {
-        // this.getCustomerAccounts();
         window.location.reload();
         this.closeModal();
         this.isLoading = false;

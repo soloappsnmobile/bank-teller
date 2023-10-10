@@ -1,27 +1,40 @@
-# BankTeller
+# Simple Bank Teller App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+This is a simple bank teller app built with Angular. It allows you to manage bank accounts and transactions.
 
-## Development server
+# Installation
+To run the project, you need to install json-server first:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`_npm install -g json-server_`
 
-## Code scaffolding
+Then, start the server by running:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`_json-server --watch db.json_``
 
-## Build
+Next, install the project dependencies by running:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`_yarn_`
 
-## Running unit tests
+# Usage
+To start the app, run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`_ng serve_`
 
-## Running end-to-end tests
+Then, navigate to http://localhost:4200/ in your web browser to access the app.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Features
 
-## Further help
+The app has the following features:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Accounts screen: displays all bank users and allows you to click on an account to view its details.
+
+- Account details screen: displays the account balance and allows you to deposit or withdraw money.
+
+- Transactions screen: displays all transactions and allows you to download an Excel file or a PDF report.
+
+# Acknowledgments
+
+This project was generated with Angular CLI version 16.1.6.
+
+
+

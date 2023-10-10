@@ -1,0 +1,273 @@
+@import "src/styles.scss";
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+  .profile-account {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    box-shadow: -6px -18px 103px -54px rgba(186, 202, 227, 0.85);
+    border-radius: 0.5rem;
+    background-color: $white-color;
+    width: 100%;
+    height: 35%;
+
+    .profile {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: $text-lg;
+        font-weight: bolder;
+        // color: $text-color;
+        margin-bottom: 1rem;
+      }
+
+      .details {
+        display: flex;
+
+        .image {
+          width: 7rem;
+          height: 9rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+            object-fit: cover;
+          }
+        }
+
+        .info {
+          margin-left: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          .name {
+            font-size: $text-lg;
+            font-weight: bold;
+          }
+          .email {
+            font-size: $text-md;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .account {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: $text-lg;
+        font-weight: bolder;
+        // color: $text-color;
+        margin-bottom: 1rem;
+      }
+     .details{
+        display: flex;
+        width: 100;
+        justify-content: space-between;
+
+         .info {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1rem;
+          background-color: $secondary-color;
+            padding: 1rem;
+            box-shadow: -6px -18px 103px -54px rgba(186, 202, 227, 0.85);
+            border-radius: 0.5rem;
+
+          .name {
+            font-size: $text-md;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+          .email {
+            font-size: $text-lg;
+            font-weight: bold;
+          }
+        }
+     }
+    }
+  }
+  .transaction-history{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: -6px -18px 103px -54px rgba(186, 202, 227, 0.85);
+    border-radius: 0.5rem;
+    background-color: $white-color;
+    width: 100%;
+    height: 62%;
+
+    .title{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        h6{
+            font-size: $text-lg;
+            font-weight: bold;
+        }
+        .action{
+            display: flex;
+            // align-items: center;
+            gap:1rem;
+
+            .deposit{
+                background-color: green;
+                color: $white-color;
+                padding: 1rem;
+                height: 2rem;
+                // Aligns the content of the button to the center
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 0.5rem;
+                font-size: $text-sm;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .withdraw{
+                background-color: red;
+                color: $white-color;
+                padding: 1rem;
+                height: 2rem;
+                // Aligns the content of the button to the center
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 0.5rem;
+                font-size: $text-sm;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .trans-info{
+        display: flex;
+        width: 100%;
+        flex-wrap:  wrap;
+        gap: 1rem;
+        overflow-y: scroll;
+
+
+
+        .trans-card{
+             background-color: $secondary-color;
+        padding: 1rem;
+        box-shadow: -6px -18px 103px -54px rgba(186, 202, 227, 0.85);
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        .icon{
+            margin-right: 1rem;
+        }
+        .details{
+            .name{
+                font-size: $text-md;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .email{
+                font-size: $text-md;
+                font-weight: 500;
+            }
+        }
+        }
+    }
+  }
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .close{
+        cursor: pointer;
+        margin-left: .5rem;
+
+    }
+    .container{
+        background-color: $white-color;
+        width: 30%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        .mod{
+            display: flex;
+            flex-direction: column;
+            .title{
+                h1{
+                    font-size: $text-xl;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                text-transform: capitalize;
+                }
+            }
+            .input-container{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+                label{
+                    font-size: $text-md;
+                font-weight: bold;
+                margin-bottom: .5rem;
+                }
+                input{
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid $primary-color;
+                    outline: none;
+                    font-size: $text-md;
+                font-weight: 500;
+                }
+            }
+            .button{
+                background-color: $primary-color;
+                color: $white-color;
+                padding: 1rem;
+                // height: 2rem;
+                // Aligns the content of the button to the center
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 0.5rem;
+                font-size: $text-sm;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    
+}

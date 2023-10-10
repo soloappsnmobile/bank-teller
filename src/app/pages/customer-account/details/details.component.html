@@ -1,0 +1,113 @@
+<div class="main" *ngIf="!isGettingCustomer">
+  <div class="profile-account">
+    <div class="profile">
+      <p>Profile Info</p>
+      <div class="details">
+        <div class="image">
+          <img src="{{ customer ? customer.image : '' }}" alt="" />
+        </div>
+        <div class="info">
+          <div class="name">
+            {{ customer ? customer.name : "Customer Name" }}
+          </div>
+          <div class="email">
+            {{ customer ? customer.email : "Customer Email" }}
+          </div>
+          <div class="email">
+            {{ customer ? customer.phoneNumber : "Customer Phone" }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="account">
+      <p>Account Info</p>
+      <div class="details" >
+        <div class="info">
+          <div class="name">Account Number</div>
+          <div class="email">
+            {{ accounts ? accounts.accountNumber : "Account Number" }}
+          </div>
+        </div>
+        <div class="info">
+          <div class="name">Account Type</div>
+          <div class="email">
+            {{ accounts ? accounts.accountType : "Account Type" }}
+          </div>
+        </div>
+        <div class="info">
+          <div class="name">Account Balance</div>
+          <div class="email">
+            GHS {{ totalAmount ? totalAmount : "0.00" }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="transaction-history">
+    <div class="title">
+      <h6>Transaction History</h6>
+      <div class="action">
+        <div class="deposit" (click)="showDepositOrWithdrawalModal('deposit')">
+          Deposit
+        </div>
+        <div
+          class="withdraw"
+          (click)="showDepositOrWithdrawalModal('withdrawal')"
+        >
+          Withdraw
+        </div>
+      </div>
+    </div>
+    <div class="trans-info">
+      <div class="trans-card" *ngFor="let tran of transaction">
+        <div class="icon">
+          <img
+            src="{{
+              tran && tran.type == 'Deposit'
+                ? 'assets/images/icons/up.png'
+                : 'assets/images/icons/down.png'
+            }}"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <div class="name">{{ tran ?tran.type : '' }}</div>
+          <div class="email">GHS {{tran? tran.amount: '' }}</div>
+          <div class="email">{{ tran && tran.date | date }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="loading" *ngIf="isGettingCustomer">
+  <app-loader></app-loader>
+</div>
+<div class="modal" *ngIf="showModal">
+  <div class="container">
+    <div class="mod">
+      <div class="title">
+        <h1>{{ trasactionType }}</h1>
+      </div>
+      <form action="" [formGroup]="amountForm">
+        <div class="input-container">
+          <label for="">
+            Amount to {{ trasactionType == "deposit" ? "Deposit" : "Withdraw" }}
+          </label>
+          <input type="number" placeholder="Enter Amount" formControlName="amount"/>
+        </div>
+        <div class="button" 
+        (click)="trasactionType == 'deposit' ? deposit() : withdrawal()"
+        >
+          <p *ngIf="!isLoading">{{ trasactionType == "deposit" ? "Deposit" : "Withdraw" }}</p>
+          <p *ngIf="isLoading">{{ trasactionType == "deposit" ? "Depositing......" : "Withdraw......." }}</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <img
+    src="assets/images/icons/close.png"
+    alt=""
+    class="close"
+    (click)="closeModal()"
+  />
+</div>

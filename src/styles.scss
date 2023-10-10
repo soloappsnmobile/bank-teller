@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6,span{
+    margin: 0;
+}
+
+
+$primary-color: #353a58;
+$secondary-color: #f5f6fa;
+$tertiary-color: #00c2ff;
+$text-dark: #969696;
+$white-color: #fff;
+
+$text-sm: 0.8rem;
+$text-md: 1rem;
+$text-lg: 1.2rem;
+$text-xl: 1.5rem;
+$text-xxl: 2rem;

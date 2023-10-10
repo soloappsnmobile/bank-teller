@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="logo">
+    <img src="assets/images/icons/logo.png" alt="logo" />
+    <p>McBryan & Co</p>
+  </div>
+  <div class="menus">
+    <div
+      class="menu"
+      routerLinkActive="active"
+      [routerLink]="menu.link"
+      *ngFor="let menu of menus"
+    >
+      <div>
+        <p>{{ menu.name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

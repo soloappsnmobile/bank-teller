@@ -1,0 +1,324 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Kwasi Mensah",
+      "email": "kwasi@gmail.com",
+      "phoneNumber": "0554352277",
+      "image": "assets/images/general/man1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Yaa Pompor",
+      "email": "yaapompor1@gmail.com",
+      "phoneNumber": "0592234455",
+      "image": "assets/images/general/woman1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Solomon Tetteh Sackey",
+      "email": "solomontetteh.st@outlook.com",
+      "phoneNumber": "0592322565",
+      "image": "assets/images/general/man2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ricky Mormor",
+      "email": "ricky@yahoo.com",
+      "phoneNumber": "0509294488",
+      "image": "assets/images/general/man3.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Rita Kwanuwaa",
+      "email": "rita123@outlook.com",
+      "phoneNumber": "0592322565",
+      "image": "assets/images/general/woman2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sandra Aakor",
+      "email": "sandra@gmail.com",
+      "phoneNumber": "0562384488",
+      "image": "assets/images/general/woman3.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Elisha Tettehfio",
+      "email": "elisha@ymail.com",
+      "phoneNumber": "0306633789",
+      "image": "assets/images/general/man4.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Felicity Morkeh",
+      "email": "felicity@gmail.com",
+      "phoneNumber": "0239944885",
+      "image": "assets/images/general/woman4.jpg"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "accountNumber": "12345678",
+      "accountType": "Checking",
+      "balance": 1000
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "accountNumber": "87654321",
+      "accountType": "Savings",
+      "balance": 2000
+    },
+    {
+      "id": 3,
+      "customerId": 3,
+      "accountNumber": "12348765",
+      "accountType": "Checking",
+      "balance": 3000
+    },
+    {
+      "id": 4,
+      "customerId": 4,
+      "accountNumber": "87651234",
+      "accountType": "Savings",
+      "balance": 4000
+    },
+    {
+      "id": 5,
+      "customerId": 5,
+      "accountNumber": "12349876",
+      "accountType": "Checking",
+      "balance": 5000
+    },
+    {
+      "id": 6,
+      "customerId": 6,
+      "accountNumber": "87652345",
+      "accountType": "Savings",
+      "balance": 6000
+    },
+    {
+      "id": 7,
+      "customerId": 7,
+      "accountNumber": "12345678",
+      "accountType": "Checking",
+      "balance": 7000
+    },
+    {
+      "id": 8,
+      "customerId": 8,
+      "accountNumber": "87654321",
+      "accountType": "Savings",
+      "balance": 8000
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 1000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "info": [
+        {
+          "id": 1,
+          "type": "Widthdrawal",
+          "amount": 2000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "accountId": 3,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 3000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "accountId": 4,
+      "info": [
+        {
+          "id": 1,
+          "type": "Widthdrawal",
+          "amount": 4000,
+          "date": "2019-01-01"
+        },
+        {
+          "id": 2,
+          "type": "Deposit",
+          "amount": 4000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "accountId": 5,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 5000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "accountId": 6,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 6000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "accountId": 7,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 7000,
+          "date": "2019-01-01"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "accountId": 8,
+      "info": [
+        {
+          "id": 1,
+          "type": "Deposit",
+          "amount": 8000,
+          "date": "2019-01-01"
+        }
+      ]
+    }
+  ],
+  "info": [
+    {
+      "id": 102,
+      "accountId": 4,
+      "type": "Deposit",
+      "amount": 1000,
+      "date": "2023-10-10T17:02:42.328Z",
+      "4Id": "transactions"
+    },
+    {
+      "id": 98,
+      "accountId": 7,
+      "type": "Deposit",
+      "amount": 100,
+      "date": "2023-10-10T17:30:43.748Z",
+      "7Id": "transactions"
+    },
+    {
+      "id": 818,
+      "accountId": 1,
+      "type": "Deposit",
+      "amount": 200,
+      "date": "2023-10-10T17:32:02.375Z",
+      "1Id": "transactions"
+    },
+    {
+      "id": 148,
+      "accountId": 2,
+      "type": "Deposit",
+      "amount": 4502,
+      "date": "2023-10-10T17:32:14.838Z",
+      "2Id": "transactions"
+    },
+    {
+      "id": 105,
+      "accountId": 3,
+      "type": "Deposit",
+      "amount": 300,
+      "date": "2023-10-10T17:32:27.490Z",
+      "3Id": "transactions"
+    },
+    {
+      "id": 76,
+      "accountId": 6,
+      "type": "Deposit",
+      "amount": 3000,
+      "date": "2023-10-10T17:32:56.938Z",
+      "6Id": "transactions"
+    },
+    {
+      "id": 904,
+      "accountId": 8,
+      "type": "Deposit",
+      "amount": 820,
+      "date": "2023-10-10T17:33:08.974Z",
+      "8Id": "transactions"
+    },
+    {
+      "id": 960,
+      "accountId": 6,
+      "type": "Deposit",
+      "amount": 20,
+      "date": "2023-10-10T17:33:31.849Z",
+      "6Id": "transactions"
+    },
+    {
+      "id": 602,
+      "accountId": 1,
+      "type": "Deposit",
+      "amount": 500,
+      "date": "2023-10-10T17:34:08.978Z",
+      "1Id": "transactions"
+    },
+    {
+      "id": 510,
+      "accountId": 1,
+      "type": "Withdrawal",
+      "amount": 200,
+      "date": "2023-10-10T17:34:14.801Z",
+      "1Id": "transactions"
+    },
+    {
+      "id": 42,
+      "accountId": 5,
+      "type": "Withdrawal",
+      "amount": 100,
+      "date": "2023-10-10T17:34:41.185Z",
+      "5Id": "transactions"
+    },
+    {
+      "id": 277,
+      "accountId": 5,
+      "type": "Deposit",
+      "amount": 150,
+      "date": "2023-10-10T17:34:53.653Z",
+      "5Id": "transactions"
+    }
+
+  ],
+  "routes": {
+    "/transactions/:uid/info": "transactions"
+  }
+}

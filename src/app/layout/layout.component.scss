@@ -1,0 +1,28 @@
+@import "src/styles.scss";
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .data-container{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width:  100%;
+
+        .side{
+            width:  20vw;
+        }
+        .info{
+            width:  80vw;
+            background-color: $secondary-color;
+            padding: 1rem;
+        }
+    }
+
+    .footer{
+
+    }
+}

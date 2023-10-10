@@ -1,0 +1,69 @@
+@import "src/styles.scss";
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .customer {
+    width: 15rem;
+    display: flex;
+    background-color: $white-color;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: -6px -18px 103px -54px rgba(186, 202, 227, 0.85);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .image {
+      width: 30%;
+      height: 3rem;
+      // border-radius: 50%;
+      // background-color: $primary-color;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .info {
+      width: 70%;
+
+      .name {
+        width: 9rem;
+        font-size: $text-md;
+        font-weight: 600;
+        // Make the text overflow with an ellipsis
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .email {
+        width: 9rem;
+        font-size: $text-sm;
+        font-weight: 400;
+        color: $text-dark;
+        // Make the text overflow with an ellipsis
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}

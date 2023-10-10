@@ -1,0 +1,66 @@
+@import "src/styles.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: $primary-color;
+  overflow: hidden;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    // border-bottom: 1px solid $secondary-color;
+    // justify-content: center;
+
+    img {
+      margin-right: 1rem;
+      height: 35px;
+      width: 35px;
+    }
+    p {
+      font-size: $text-lg;
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    // padding: 1rem 0 1rem 1rem;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      height: 4rem;
+      width: 100%;
+      padding: 0 1rem;
+
+      &:hover {
+        // Background color should be gradient from left to right with $primary-color and $tertiary-color
+        background: linear-gradient(
+          90deg,
+          rgba(137, 135, 179, 1) 0%,
+          rgba(187, 187, 201, 1) 45%,
+          rgba(240, 240, 240, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+
+      img {
+        height: 25px;
+        width: 25px;
+        margin-right: 1rem;
+      }
+      p {
+        font-size: $text-sm;
+        color: $secondary-color;
+        font-weight: 600;
+      }
+    }
+  }
+}

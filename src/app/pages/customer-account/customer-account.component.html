@@ -1,0 +1,14 @@
+<div class="main-container" *ngIf="!isGettingAccounts">
+  <div *ngFor="let customer of customers" class="customer" (click)="goToDetails(customer.id)">
+    <div class="image">
+        <img src="{{ customer.image }}" alt="" />
+    </div>
+    <div class="info">
+        <div class="name">{{ customer.name }}</div>
+        <div class="email">{{ customer.email }}</div>
+    </div>
+  </div>
+</div>
+<div class="loading" *ngIf="isGettingAccounts">
+    <app-loader></app-loader>
+</div>
